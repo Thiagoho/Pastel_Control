@@ -30,6 +30,27 @@ public Venda(Long id,
 	this.dataVencimento = dataVencimento;
 	this.retiradoPor = retiradoPor;
 }
+public Long getId() {
+	return id;
+}
+public Cliente getCliente() {
+	return cliente;
+}
+public LocalDateTime getDatavenda() {
+	return datavenda;
+}
+public BigDecimal getValorTotal() {
+	return valorTotal;
+}
+public FormaPagamento getFormaPagamento() {
+	return formaPagamento;
+}
+public LocalDate getDataVencimento() {
+	return dataVencimento;
+}
+public String getRetiradoPor() {
+	return retiradoPor;
+}
 
 
 
