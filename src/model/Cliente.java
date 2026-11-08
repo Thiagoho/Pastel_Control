@@ -62,6 +62,12 @@ public boolean isAtivo() {
 public void setAtivo(boolean ativo) {
 	this.ativo = ativo;
 }
+
+@Override
+public String toString() {
+	return "Cliente [id=" + id + ", codigoCliente=" + codigoCliente + ", nome=" + nome + ", whatsapp=" + whatsapp
+			+ ", empresa=" + empresa + ", ativo=" + ativo + "]";
+}
  
 
 }
