@@ -9,7 +9,7 @@ import model.enums.FormaPagamento;
 public class Venda {
 private Long id;
 private Cliente cliente;
-private LocalDateTime datavenda;
+private LocalDateTime dataVenda;
 private BigDecimal valorTotal;
 private FormaPagamento formaPagamento;
 private LocalDate dataVencimento;
@@ -24,7 +24,7 @@ public Venda(Long id,
 	
 	this.id = id;
 	this.cliente = cliente;
-	this.datavenda = LocalDateTime.now();
+	this.dataVenda = LocalDateTime.now();
 	this.valorTotal = valorTotal;
 	this.formaPagamento = formaPagamento.FIADO;
 	this.dataVencimento = dataVencimento;
@@ -36,8 +36,8 @@ public Long getId() {
 public Cliente getCliente() {
 	return cliente;
 }
-public LocalDateTime getDatavenda() {
-	return datavenda;
+public LocalDateTime getDataVenda() {
+	return dataVenda;
 }
 public BigDecimal getValorTotal() {
 	return valorTotal;
@@ -51,7 +51,5 @@ public LocalDate getDataVencimento() {
 public String getRetiradoPor() {
 	return retiradoPor;
 }
-
-
 
 }
